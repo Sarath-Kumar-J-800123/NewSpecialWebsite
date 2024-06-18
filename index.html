@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Log_In_Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styleseet.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body style="background-color: #F5F5DC">
+<div class="showcase">
+	<div class="video-container"><video autoplay muted loop id="myVideo"
+ 		  src="Videos/BGV.mp4" type="video/mp4"></video>
+</div>
+</div>
+	<div class="container">
+	<fieldset style="color:#6495ED">
+    <div class="form-group" align="center">
+      <label for="text"><b>Name_Of_The_Family_First_Letter:</b></label>
+      <input type="text" class="form-control" id="namefirstletter" placeholder="Enter Your Name Of First Letter" name="namefirstletter" style="width:300px" pattern="[A-Za-z ]{5}" required>
+      </div>
+    <div class="form-group" align="center">
+      <label for="pwd"><b>Family_Password:</b></label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter Your password" name="pswd" style="width:300px" pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}"
+ 		 title="Must contain at least one uppercase and lowercase letter, and at least 8 or more characters" required>
+  </div>
+    <div class="form-group" align="center">
+    <button type="submit" class="btn btn-success" style="width:150px" onclick="login()">Submit</button>
+    <button type="submit" class="btn btn-primary" style="width:150px">Reset</button>
+    </div>
+     <div>
+    	<marquee width="100%" behavior="alternate" bgcolor="#7FFFD4" style="color:purple;border:2px solid black; border-radius: 10px;"><b>***Only Admin Can Be Login***</b></marquee>
+    </div>
+    	</fieldset>
+  </div>
+ 
+</body>
+<script type="text/javascript">
+function login()
+	{
+	namefirstletter=document.getElementById("namefirstletter").value
+	password=document.getElementById("pwd").value
+		if(namefirstletter==="S J D" && password==="SivaJanviDevi")
+		{
+			alert("User LogIn Successfully");
+			window.location.href="homepage.html";
+		}
+		else
+		{
+			alert("User LogIn Failed");
+			window.location.href="index.html";
+		}
+	}
+</script>
+</html>
