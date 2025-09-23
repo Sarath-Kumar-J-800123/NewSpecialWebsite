@@ -69,6 +69,7 @@ body{
 	background-size:cover; 
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	background-position: center;
 }
 video{
 	width:20cm;
@@ -307,6 +308,7 @@ img
  width:470px; 
  height:470px;
 }
+
 
 
 
