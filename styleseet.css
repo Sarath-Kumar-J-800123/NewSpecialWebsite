@@ -67,13 +67,13 @@ body{
 	width:18%
 }
 
-#Bg{
+/*#Bg{
 	background-image: url(FML-02.jpeg);
 	background-size:cover; 
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center;
-}
+}*/
 video{
 	width:20cm;
 	height: 20cm;
@@ -312,6 +312,7 @@ img
  width:470px; 
  height:470px;
 }
+
 
 
 
