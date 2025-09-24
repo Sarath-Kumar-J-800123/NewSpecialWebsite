@@ -64,13 +64,13 @@ body{
 	width:18%
 }
 
-/**#Bg{
+#Bg{
 	background-image: url(FML-02.jpeg);
 	background-size:cover; 
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center;
-}**/
+}
 video{
 	width:20cm;
 	height: 20cm;
@@ -107,7 +107,7 @@ button{
 #d2
 {
 	float:right;
-	width:50%;
+	width:30%;
 }
 
 #d3
@@ -119,7 +119,7 @@ button{
 #d4
 {
 	float:right;
-	width:50%;
+	width:30%;
 }
 
 #d5
@@ -308,6 +308,7 @@ img
  width:470px; 
  height:470px;
 }
+
 
 
 
